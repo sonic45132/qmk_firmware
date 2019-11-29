@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    1upkeyboards
 #define PRODUCT         jd40mkII
-#define DESCRIPTION     A custom 60% keyboard
+#define DESCRIPTION     A custom 40% keyboard
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -41,13 +41,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { B3, B2, B1, B0, D4 }
-#define MATRIX_COL_PINS { C7, F7, F6, F5, F4, F1, E6, D1, D0, D2, D3, D5, D6, D7 }
+#define MATRIX_ROW_PINS { F0, F1, F5, B4 }
+#define MATRIX_COL_PINS { F4, D7, B5, B6, C6, C7, D4, D6, D5, D0, D1, D2 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
+// No LEDS on this board
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
 // #define BACKLIGHT_LEVELS 5

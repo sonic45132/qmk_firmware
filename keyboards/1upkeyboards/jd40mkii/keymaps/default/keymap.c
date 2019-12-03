@@ -39,18 +39,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------------------.
    * |     |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  | Del |
    * |-----------------------------------------------------------------------+
-   * |       |     |     |     |     |     |     |     |     |     |         |
+   * |       |     |     |     |     |     |     |     |     |  ;  |         |
    * |-----------------------------------------------------------------------+
-   * |         |VolUp|VolDn|VolMu|     |     |     |     |     |       |     |
+   * |         |VolUp|VolDn|VolMu|     |     |     |     |  '  |   ?   |     |
    * |-----------------------------------------------------------------------+
-   * |       |     |     |                                   |      |        |
+   * |       |     |     |                                   |      |   L3   |
    * `-----------------------------------------------------------------------'
    */
   [1] = LAYOUT_40_ansi(
     KC_TRNS, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_DEL,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-    KC_TRNS, KC_VOLU, KC_VOLD, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SCLN, KC_TRNS,
+    KC_TRNS, KC_VOLU, KC_VOLD, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_QUOT, KC_SLSH, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(3)
   ),
 
   /* Function 2
@@ -66,6 +66,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [2] = LAYOUT_40_ansi(
     KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+  ),
+
+  /* Function 2
+   * ,-----------------------------------------------------------------------.
+   * |RESET|     |     |     |     |     |     |     |     |     |     |     |
+   * |-----------------------------------------------------------------------+
+   * |       |     |     |     |     |     |     |     |     |     |         |
+   * |-----------------------------------------------------------------------+
+   * |         |     |     |     |     |     |     |     |     |       |     |
+   * |-----------------------------------------------------------------------+
+   * |       |     |     |                                   |      |        |
+   * `-----------------------------------------------------------------------'
+   */
+  [3] = LAYOUT_40_ansi(
+    RESET, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
